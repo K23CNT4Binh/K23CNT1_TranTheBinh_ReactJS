@@ -34,10 +34,7 @@ import './App.css';
         </p>
       </header>
     </div>
-  
-
-
-
+  );
         </p>
         <a
           className="App-link"
