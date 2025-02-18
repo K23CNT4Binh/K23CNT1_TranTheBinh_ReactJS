@@ -3,7 +3,7 @@ import TtbFuncComp from "./components/TtbFuncComp";
 import TtbJsxExpression from "./components/TtbJsxExpression";
 
 
-function TtbAppApp() {
+function TtbApp() {
   return (
     <div className="container border mt-3 bg-white">
       <h1>React JS Lesson03 - Trần Thế Bình</h1>
@@ -19,4 +19,4 @@ function TtbAppApp() {
   );
 }
 
-export default TtbAppApp;
+export default TtbApp;
