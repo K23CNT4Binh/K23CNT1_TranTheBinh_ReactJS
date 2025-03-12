@@ -5,17 +5,17 @@ class TtbStudentList extends Component {
     
         // Hàm xử lý sự kiện xêm
     ttbHandleView = (ttbStudent)=>{
-        // Chuyển dữ liệu lên TvcApp
+        // Chuyển dữ liệu lên TtbApp
         this.props.onTtbHandleView(ttbStudent);
     }
 
 
   render() {
-    // lấy dữ liệu trong props từ TvcApp chuyển xuống
+    // lấy dữ liệu trong props từ TtbApp chuyển xuống
     let {renderTtbStudents} = this.props;
     console.log("List:",renderTtbStudents);
     
-    // chuyển dữ liệu vào TvcStudent để hiển thị
+    // chuyển dữ liệu vào TtbStudent để hiển thị
     let ttbElementStudent = renderTtbStudents.map((ttbItem,index)=>{
         return <TtbStudent key={index} renderTtbStudent={ttbItem} onTtbHandleView={this.ttbHandleView} />
     })

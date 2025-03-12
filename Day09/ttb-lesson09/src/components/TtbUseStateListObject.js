@@ -5,10 +5,10 @@ import { useState } from 'react';
 export default function TtbUseStateListObject() {
     //mock data
     const listStudent = [
-        {ttbId:"SV001",ttbName:"Trần Thế Bình", ttbAge:20, ttbClass:"K23CNT1"},
-        {ttbId:"SV002",ttbName:"Nguyễn Quang A", ttbAge:22, ttbClass:"K23CNT1"},
-        {ttbId:"SV003",ttbName:"Nguyễn Quang B", ttbAge:21, ttbClass:"K23CNT1"},
-        {ttbId:"SV004",ttbName:"Nguyễn Quang C", ttbAge:23, ttbClass:"K23CNT1"},
+        {ttbId:"SV001",ttbName:"Trần Thế Bình", ttbEmail:"tranthebinh@gmail.com", ttbAmount:"1000"},
+        {ttbId:"SV002",ttbName:"Nguyễn Quang A", ttbEmail:"nguyenvana@gmail.com", ttbAmount:"2000"},
+        {ttbId:"SV003",ttbName:"Nguyễn Quang B", ttbEmail:"nguyenvanb@gmail.com", ttbAmount:"3000"},
+        {ttbId:"SV004",ttbName:"Nguyễn Quang C", ttbEmail:"nguyenvanc@gmail.com", ttbAmount:"4000"},
     ];
     //tao state voi hook
     const [ttbStudents, setTtbStudents] = useState(listStudent);
