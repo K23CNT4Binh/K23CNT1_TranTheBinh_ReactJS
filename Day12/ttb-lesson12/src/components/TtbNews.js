@@ -1,5 +1,5 @@
 import React from 'react';
 
 export default function TtbNews() {
-  return <h2>Tin Tức</h2>;
+  return <h2>Ttb Tin Tức</h2>;
 }

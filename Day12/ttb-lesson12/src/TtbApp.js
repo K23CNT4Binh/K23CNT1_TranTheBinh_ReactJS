@@ -9,7 +9,9 @@ import TtbNews from './components/TtbNews'
 export default function TtbApp() {
   return (
     <div className='container border my-3'>
-        <h1>React Router Demo</h1>
+      <div className='alert alert-primary'>
+      <h1 className='text-center'>React Router Demo</h1>
+      </div>
         <hr />
         <Router>
           <div>
