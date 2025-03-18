@@ -1,0 +1,26 @@
+{
+    "users":[
+        {
+            "fullName":"Binh Gold",
+            "age":20,
+            "class":"K23CNT1"
+        },
+        {
+            "fullName":"Nguyen Quang A",
+            "age":16,
+            "class":"K23CNT2"
+        },
+        {
+            "fullName":"Nguyen Quang B",
+            "age":18,
+            "class":"K23CNT3"
+        }
+    ],
+    "students":[
+        {
+               "studentId":"SV001"
+        
+        }
+    ]
+    
+}
