@@ -4,7 +4,8 @@ import axios from 'axios';
 export default function TtbCreateMockAPI() {
   // Khởi tạo state
   const [ttbFullName, setTtbFullName] = useState('');
-  const [ttbAge, setTtbAge] = useState(0);
+  const [ttbPhone, setTtbPhone] = useState('');
+  const [ttbEmail, setTtbEmail] = useState('');
   const [ttbActive, setTtbActive] = useState(true);
 
   // API endpoint
@@ -15,7 +16,7 @@ export default function TtbCreateMockAPI() {
     event.preventDefault();
     console.log("ttbActive:", ttbActive);
 
-    let ttbNewUser = { ttbFullName, ttbAge, ttbActive };
+    let ttbNewUser = { ttbFullName, ttbPhone, ttbEmail, ttbActive };
     console.log(ttbNewUser);
 
     // Gửi dữ liệu lên API
@@ -46,13 +47,24 @@ export default function TtbCreateMockAPI() {
         </div>
 
         <div className="mb-1">
-          <label htmlFor="ttbAge">Age</label>
+          <label htmlFor="ttbPhone">Phone</label>
           <input
             type="number"
-            name="ttbAge"
-            id="ttbAge"
-            value={ttbAge}
-            onChange={(ev) => setTtbAge(Number(ev.target.value))}
+            name="ttbPhone"
+            id="ttbPhone"
+            value={ttbPhone}
+            onChange={(ev) => setTtbPhone(Number(ev.target.value))}
+          />
+        </div>
+
+        <div className="mb-1">
+          <label htmlFor="ttbEmail">Email</label>
+          <input
+            type="number"
+            name="ttbEmail"
+            id="ttbEmail"
+            value={ttbEmail}
+            onChange={(ev) => setTtbEmail(Number(ev.target.value))}
           />
         </div>
 
